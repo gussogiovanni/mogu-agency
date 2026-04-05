@@ -17,49 +17,63 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="about.html" class="nav-active">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+      <li><a href="about.html" class="nav-active" data-i18n="nav.about">About</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
     </ul>
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <span>/</span>
+      <button class="lang-btn" data-lang="fr">FR</button>
+    </div>
   </nav>
 
   <!-- PAGE HEADER -->
   <section class="page-header">
-    <p class="hero-label">Who we are</p>
-    <h1 class="page-title">Built different.<br>By design.</h1>
+    <p class="hero-label" data-i18n="about.label">Who we are</p>
+    <h1 class="page-title" data-i18n="about.title">Built for venues. Built different.</h1>
   </section>
+
+  <!-- ABOUT PHOTO -->
+  <div class="about-photo-wrap">
+    <img
+      src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=1400&q=80&fit=crop"
+      alt="Wedding venue in France"
+      class="about-photo"
+    />
+  </div>
 
   <!-- MANIFESTO -->
   <section class="manifesto">
-    <p class="manifesto-text">MoGu was born out of frustration with agencies that overpromise and underdeliver. We do things differently — small team, big thinking, zero fluff.</p>
+    <p class="manifesto-text" data-i18n="about.manifesto">MoGu was built specifically for wedding venues in France. We got tired of watching beautiful châteaux and domaines struggle with generic marketing agencies that didn't understand their world. So we built one that does.</p>
   </section>
 
   <!-- VALUES -->
   <section class="values">
     <div class="values-header">
-      <p class="hero-label">What drives us</p>
+      <p class="hero-label" data-i18n="about.values.label">What drives us</p>
     </div>
     <div class="values-grid">
       <div class="value-item">
         <span class="value-num">01</span>
-        <h3>Honesty first</h3>
-        <p>We tell you what you need to hear, not what you want to hear. No vanity metrics, no fluff reports.</p>
+        <h3 data-i18n="about.v1.title">Venues first</h3>
+        <p data-i18n="about.v1.desc">We work exclusively with wedding venues. That means we understand your seasonality, your ideal client, and your booking cycle better than any generalist agency ever could.</p>
       </div>
       <div class="value-item">
         <span class="value-num">02</span>
-        <h3>Results over awards</h3>
-        <p>We care about your revenue, not our trophy shelf. Every project is measured by real business impact.</p>
+        <h3 data-i18n="about.v2.title">Results over aesthetics</h3>
+        <p data-i18n="about.v2.desc">Beautiful work means nothing without bookings. Every decision we make is tied to filling your calendar with the right couples at the right price.</p>
       </div>
       <div class="value-item">
         <span class="value-num">03</span>
-        <h3>Long-term thinking</h3>
-        <p>We build relationships, not transactions. Our best clients have been with us for years.</p>
+        <h3 data-i18n="about.v3.title">France is our market</h3>
+        <p data-i18n="about.v3.desc">We know the French wedding market deeply — the platforms, the planners, the publications, and the couples. Local expertise with an international eye.</p>
       </div>
       <div class="value-item">
         <span class="value-num">04</span>
-        <h3>Craft matters</h3>
-        <p>Details make the difference. We sweat the small stuff so your brand looks world-class at every touchpoint.</p>
+        <h3 data-i18n="about.v4.title">Long-term partners</h3>
+        <p data-i18n="about.v4.desc">We don't do one-off projects. We build lasting relationships with venues we believe in, becoming a true marketing partner — not just a supplier.</p>
       </div>
     </div>
   </section>
@@ -67,27 +81,27 @@
   <!-- STATS -->
   <section class="stats">
     <div class="stat-item">
-      <span class="stat-num">48+</span>
-      <span class="stat-label">Brands built</span>
+      <span class="stat-num">38+</span>
+      <span class="stat-label" data-i18n="about.stat1">Venues partnered</span>
     </div>
     <div class="stat-item">
       <span class="stat-num">6</span>
-      <span class="stat-label">Years running</span>
+      <span class="stat-label" data-i18n="about.stat2">Years in weddings</span>
     </div>
     <div class="stat-item">
-      <span class="stat-num">3×</span>
-      <span class="stat-label">Avg. client growth</span>
+      <span class="stat-num">2×</span>
+      <span class="stat-label" data-i18n="about.stat3">Avg. booking growth</span>
     </div>
     <div class="stat-item">
-      <span class="stat-num">12</span>
-      <span class="stat-label">Countries</span>
+      <span class="stat-num">9</span>
+      <span class="stat-label" data-i18n="about.stat4">Regions in France</span>
     </div>
   </section>
 
   <!-- BOTTOM CTA -->
   <section class="cta-bar">
-    <p>Like what you see?</p>
-    <a href="contact.html" class="btn">Let's talk</a>
+    <p data-i18n="about.cta.text">Like what you see?</p>
+    <a href="contact.html" class="btn" data-i18n="about.cta.btn">Let's talk</a>
   </section>
 
   <!-- FOOTER -->

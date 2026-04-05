@@ -17,17 +17,22 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html" class="nav-active">Services</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="services.html" class="nav-active" data-i18n="nav.services">Services</a></li>
+      <li><a href="about.html" data-i18n="nav.about">About</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
     </ul>
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <span>/</span>
+      <button class="lang-btn" data-lang="fr">FR</button>
+    </div>
   </nav>
 
   <!-- PAGE HEADER -->
   <section class="page-header">
-    <p class="hero-label">What we do</p>
-    <h1 class="page-title">Services built<br>for growth.</h1>
+    <p class="hero-label" data-i18n="services.label">What we do</p>
+    <h1 class="page-title" data-i18n="services.title">Services built for wedding venues.</h1>
   </section>
 
   <!-- SERVICES LIST -->
@@ -36,52 +41,72 @@
     <div class="service-row">
       <div class="service-row-num">01</div>
       <div class="service-row-body">
-        <h2>Brand Identity</h2>
-        <p>Your brand is more than a logo. We build complete visual systems — logo, color palette, typography, tone of voice — that make you instantly recognizable and impossible to copy.</p>
+        <img
+          src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80&fit=crop"
+          alt="Elegant French wedding venue"
+          class="service-img"
+        />
+        <h2 data-i18n="services.s1.title">Brand Identity</h2>
+        <p data-i18n="services.s1.desc">Your venue is unique — your brand should be too. We build complete visual identities for wedding venues: logo, color palette, typography, and tone of voice that make couples fall in love before they even visit.</p>
       </div>
       <div class="service-row-tags">
-        <span class="tag">Logo design</span>
-        <span class="tag">Visual system</span>
-        <span class="tag">Brand guidelines</span>
+        <span class="tag" data-i18n="services.s1.t1">Logo design</span>
+        <span class="tag" data-i18n="services.s1.t2">Visual system</span>
+        <span class="tag" data-i18n="services.s1.t3">Brand guidelines</span>
       </div>
     </div>
 
     <div class="service-row">
       <div class="service-row-num">02</div>
       <div class="service-row-body">
-        <h2>Digital Campaigns</h2>
-        <p>Paid social, SEO, email — we build and run campaigns that turn attention into revenue. Every decision is backed by data, every euro is accountable.</p>
+        <img
+          src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=800&q=80&fit=crop"
+          alt="Couple planning their wedding"
+          class="service-img"
+        />
+        <h2 data-i18n="services.s2.title">Digital Campaigns</h2>
+        <p data-i18n="services.s2.desc">We run targeted campaigns on Google, Instagram and Pinterest to put your venue in front of engaged couples at the exact moment they're searching. Every euro tracked, every booking counted.</p>
       </div>
       <div class="service-row-tags">
-        <span class="tag">Paid social</span>
-        <span class="tag">SEO</span>
-        <span class="tag">Email marketing</span>
+        <span class="tag" data-i18n="services.s2.t1">Paid social</span>
+        <span class="tag" data-i18n="services.s2.t2">Google Ads</span>
+        <span class="tag" data-i18n="services.s2.t3">SEO</span>
       </div>
     </div>
 
     <div class="service-row">
       <div class="service-row-num">03</div>
       <div class="service-row-body">
-        <h2>Content Creation</h2>
-        <p>Copy that converts, visuals that stop the scroll, video that tells your story. We create content that works across every platform and every format.</p>
+        <img
+          src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&q=80&fit=crop"
+          alt="Wedding photography and content"
+          class="service-img"
+        />
+        <h2 data-i18n="services.s3.title">Content Creation</h2>
+        <p data-i18n="services.s3.desc">Stunning photography, cinematic video, and copy that captures the emotion of your venue. We create content that makes couples picture their wedding day the moment they see it.</p>
       </div>
       <div class="service-row-tags">
-        <span class="tag">Copywriting</span>
-        <span class="tag">Photography</span>
-        <span class="tag">Video</span>
+        <span class="tag" data-i18n="services.s3.t1">Photography</span>
+        <span class="tag" data-i18n="services.s3.t2">Video</span>
+        <span class="tag" data-i18n="services.s3.t3">Copywriting</span>
       </div>
     </div>
 
     <div class="service-row">
       <div class="service-row-num">04</div>
       <div class="service-row-body">
-        <h2>Web Design</h2>
-        <p>Fast, bold, and built to convert. We design and build websites that represent your brand at its best and turn visitors into clients.</p>
+        <img
+          src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&q=80&fit=crop"
+          alt="Elegant wedding venue interior"
+          class="service-img"
+        />
+        <h2 data-i18n="services.s4.title">Web Design</h2>
+        <p data-i18n="services.s4.desc">A website as beautiful as your venue — and built to convert. We design and build fast, elegant websites that showcase your space and turn visitors into inquiries.</p>
       </div>
       <div class="service-row-tags">
-        <span class="tag">UI design</span>
-        <span class="tag">Development</span>
-        <span class="tag">Conversion</span>
+        <span class="tag" data-i18n="services.s4.t1">UI design</span>
+        <span class="tag" data-i18n="services.s4.t2">Development</span>
+        <span class="tag" data-i18n="services.s4.t3">Conversion</span>
       </div>
     </div>
 
@@ -89,8 +114,8 @@
 
   <!-- BOTTOM CTA -->
   <section class="cta-bar">
-    <p>Ready to work together?</p>
-    <a href="contact.html" class="btn">Get in touch</a>
+    <p data-i18n="services.cta.text">Ready to fill your calendar?</p>
+    <a href="contact.html" class="btn" data-i18n="services.cta.btn">Get in touch</a>
   </section>
 
   <!-- FOOTER -->
