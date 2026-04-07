@@ -19,6 +19,18 @@ const translations = {
     'home.s3.title': 'Content Creation',
     'home.s3.desc': 'Photos and words that make couples say yes.',
 
+    // Testimonials
+    'home.testimonials.label': 'What venues say',
+    'home.t1.quote': '"MoGu filled our entire summer season within 3 months. We\'ve never had a waiting list before — now we do."',
+    'home.t1.name': 'Sophie Martin',
+    'home.t1.venue': 'Château de Lumière, Loire Valley',
+    'home.t2.quote': '"They understood our venue instantly. The campaigns brought exactly the couples we love — and our revenue is up 80% year-on-year."',
+    'home.t2.name': 'Thomas & Claire Beaumont',
+    'home.t2.venue': 'Domaine des Oliviers, Provence',
+    'home.t3.quote': '"Finally an agency that speaks our language — literally and figuratively. Our Instagram went from invisible to 12k followers in 8 months."',
+    'home.t3.name': 'Élodie Roux',
+    'home.t3.venue': 'Le Mas Saint-Joseph, Languedoc',
+
     // Services page
     'services.label': 'What we do',
     'services.title': 'Services built for wedding venues.',
@@ -101,6 +113,18 @@ const translations = {
     'home.s2.desc': 'Atteignez les couples prêts à réserver le lieu de leurs rêves.',
     'home.s3.title': 'Création de contenu',
     'home.s3.desc': 'Des photos et des mots qui font dire oui aux couples.',
+
+    // Testimonials
+    'home.testimonials.label': 'Ce que disent les lieux',
+    'home.t1.quote': '« MoGu a rempli tout notre été en 3 mois. Nous n\'avions jamais eu de liste d\'attente — maintenant oui. »',
+    'home.t1.name': 'Sophie Martin',
+    'home.t1.venue': 'Château de Lumière, Vallée de la Loire',
+    'home.t2.quote': '« Ils ont compris notre lieu instantanément. Les campagnes ont attiré exactement les couples avec lesquels nous aimons travailler — et notre CA est en hausse de 80 % sur l\'année. »',
+    'home.t2.name': 'Thomas & Claire Beaumont',
+    'home.t2.venue': 'Domaine des Oliviers, Provence',
+    'home.t3.quote': '« Enfin une agence qui parle notre langue — au sens propre comme au figuré. Notre Instagram est passé de l\'invisibilité à 12 000 abonnés en 8 mois. »',
+    'home.t3.name': 'Élodie Roux',
+    'home.t3.venue': 'Le Mas Saint-Joseph, Languedoc',
 
     // Services page
     'services.label': 'Ce que nous faisons',
