@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact — MoGu Agency</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="nav">
+  <!-- NAV -->
+  <nav class="nav scrolled" id="nav">
     <a href="index.html" class="nav-logo">MoGu</a>
     <button class="nav-toggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -22,16 +20,19 @@
       <li><a href="about.html" data-i18n="nav.about">About</a></li>
       <li><a href="contact.html" class="nav-active" data-i18n="nav.contact">Contact</a></li>
     </ul>
-    <div class="lang-toggle">
-      <button class="lang-btn active" data-lang="en">EN</button>
-      <span>/</span>
-      <button class="lang-btn" data-lang="fr">FR</button>
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <span>/</span>
+        <button class="lang-btn" data-lang="fr">FR</button>
+      </div>
+      <a href="contact.html" class="nav-cta" data-i18n="nav.cta">Start a project</a>
     </div>
   </nav>
 
   <!-- PAGE HEADER -->
   <section class="page-header">
-    <p class="hero-label" data-i18n="contact.label">Get in touch</p>
+    <span class="section-eyebrow" data-i18n="contact.label">Get in touch</span>
     <h1 class="page-title" data-i18n="contact.title">Let's fill your calendar.</h1>
   </section>
 
@@ -41,19 +42,18 @@
     <!-- LEFT: INFO -->
     <div class="contact-info">
       <p class="contact-intro" data-i18n="contact.intro">Tell us about your venue and your goals. We'll get back to you within 24 hours.</p>
-
       <div class="contact-details">
         <div class="contact-detail-item">
-          <span class="contact-detail-label" data-i18n="contact.detail1.label">Email</span>
-          <span class="contact-detail-value">hello@moguagency.com</span>
+          <p class="contact-detail-label" data-i18n="contact.detail1.label">Email</p>
+          <p class="contact-detail-value">hello@moguagency.com</p>
         </div>
         <div class="contact-detail-item">
-          <span class="contact-detail-label" data-i18n="contact.detail2.label">Based in</span>
-          <span class="contact-detail-value" data-i18n="contact.detail2.value">Paris, France</span>
+          <p class="contact-detail-label" data-i18n="contact.detail2.label">Based in</p>
+          <p class="contact-detail-value" data-i18n="contact.detail2.value">Paris, France</p>
         </div>
         <div class="contact-detail-item">
-          <span class="contact-detail-label" data-i18n="contact.detail3.label">We serve</span>
-          <span class="contact-detail-value" data-i18n="contact.detail3.value">Wedding venues across France</span>
+          <p class="contact-detail-label" data-i18n="contact.detail3.label">We serve</p>
+          <p class="contact-detail-value" data-i18n="contact.detail3.value">Wedding venues across France</p>
         </div>
       </div>
     </div>
@@ -63,23 +63,23 @@
       <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 
         <div class="form-group">
-          <label for="name" data-i18n="contact.form.name">Your name</label>
-          <input type="text" id="name" name="name" placeholder="Marie Dupont" required>
+          <label class="form-label" for="name" data-i18n="contact.form.name">Your name</label>
+          <input class="form-input" type="text" id="name" name="name" placeholder="Marie Dupont" required>
         </div>
 
         <div class="form-group">
-          <label for="email" data-i18n="contact.form.email">Email address</label>
-          <input type="email" id="email" name="email" placeholder="marie@chateau.fr" required>
+          <label class="form-label" for="email" data-i18n="contact.form.email">Email address</label>
+          <input class="form-input" type="email" id="email" name="email" placeholder="marie@chateau.fr" required>
         </div>
 
         <div class="form-group">
-          <label for="venue" data-i18n="contact.form.venue">Your venue name</label>
-          <input type="text" id="venue" name="venue" placeholder="Château de la Loire">
+          <label class="form-label" for="venue" data-i18n="contact.form.venue">Your venue name</label>
+          <input class="form-input" type="text" id="venue" name="venue" placeholder="Château de la Loire">
         </div>
 
         <div class="form-group">
-          <label for="budget" data-i18n="contact.form.budget">Budget range</label>
-          <select id="budget" name="budget">
+          <label class="form-label" for="budget" data-i18n="contact.form.budget">Budget range</label>
+          <select class="form-select" id="budget" name="budget">
             <option value="" data-i18n="contact.form.budgetPlaceholder">Select a range</option>
             <option value="small">€1k – €5k</option>
             <option value="medium">€5k – €20k</option>
@@ -89,8 +89,8 @@
         </div>
 
         <div class="form-group">
-          <label for="message" data-i18n="contact.form.message">Tell us about your venue</label>
-          <textarea id="message" name="message" rows="5" placeholder="Where is your venue? What's your main challenge right now?" required></textarea>
+          <label class="form-label" for="message" data-i18n="contact.form.message">Tell us about your venue</label>
+          <textarea class="form-textarea" id="message" name="message" rows="5" placeholder="Where is your venue? What's your main challenge right now?" required></textarea>
         </div>
 
         <button type="submit" class="btn btn-full" data-i18n="contact.form.submit">Send message</button>
@@ -102,10 +102,33 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2025 MoGu Agency</p>
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">MoGu</a>
+      <p class="footer-tagline" data-i18n="footer.tagline">Wedding venue marketing across France. Only venues. Only results.</p>
+    </div>
+    <div class="footer-nav">
+      <p class="footer-links-title">Navigation</p>
+      <ul class="footer-links">
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact-col">
+      <p class="footer-links-title">Get in touch</p>
+      <a href="mailto:hello@moguagency.com" class="footer-contact-email">hello@moguagency.com</a>
+      <p class="footer-contact-location">Paris, France</p>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 MoGu Agency</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
-
 </body>
 </html>

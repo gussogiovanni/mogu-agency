@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About — MoGu Agency</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="nav">
+  <!-- NAV -->
+  <nav class="nav scrolled" id="nav">
     <a href="index.html" class="nav-logo">MoGu</a>
     <button class="nav-toggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -22,94 +20,120 @@
       <li><a href="about.html" class="nav-active" data-i18n="nav.about">About</a></li>
       <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
     </ul>
-    <div class="lang-toggle">
-      <button class="lang-btn active" data-lang="en">EN</button>
-      <span>/</span>
-      <button class="lang-btn" data-lang="fr">FR</button>
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <span>/</span>
+        <button class="lang-btn" data-lang="fr">FR</button>
+      </div>
+      <a href="contact.html" class="nav-cta" data-i18n="nav.cta">Start a project</a>
     </div>
   </nav>
 
   <!-- PAGE HEADER -->
   <section class="page-header">
-    <p class="hero-label" data-i18n="about.label">Who we are</p>
-    <h1 class="page-title" data-i18n="about.title">Built for venues. Built different.</h1>
+    <span class="section-eyebrow" data-i18n="about.label">Who we are</span>
+    <h1 class="page-title" data-i18n="about.title">Built for venues.<br>Built to perform.</h1>
   </section>
 
   <!-- ABOUT PHOTO -->
   <div class="about-photo-wrap">
     <img
-      src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1600&q=85&auto=format&fit=crop"
-      alt="Beautiful wedding venue in France"
+      src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1800&q=90&auto=format&fit=crop"
+      alt="French wedding reception with atmospheric lighting"
       class="about-photo"
     />
   </div>
 
   <!-- MANIFESTO -->
-  <section class="manifesto">
+  <div class="manifesto reveal">
     <p class="manifesto-text" data-i18n="about.manifesto">MoGu was built specifically for wedding venues in France. We got tired of watching beautiful châteaux and domaines struggle with generic marketing agencies that didn't understand their world. So we built one that does.</p>
-  </section>
+  </div>
 
   <!-- VALUES -->
   <section class="values">
-    <div class="values-header">
-      <p class="hero-label" data-i18n="about.values.label">What drives us</p>
+    <div class="values-label reveal">
+      <span class="section-eyebrow" data-i18n="about.values.label">What drives us</span>
     </div>
     <div class="values-grid">
-      <div class="value-item">
+      <div class="value-item reveal">
         <span class="value-num">01</span>
-        <h3 data-i18n="about.v1.title">Venues first</h3>
-        <p data-i18n="about.v1.desc">We work exclusively with wedding venues. That means we understand your seasonality, your ideal client, and your booking cycle better than any generalist agency ever could.</p>
+        <h3 class="value-title" data-i18n="about.v1.title">Venues first</h3>
+        <p class="value-desc" data-i18n="about.v1.desc">We work exclusively with wedding venues. That means we understand your seasonality, your ideal client, and your booking cycle better than any generalist agency ever could.</p>
       </div>
-      <div class="value-item">
+      <div class="value-item reveal delay-1">
         <span class="value-num">02</span>
-        <h3 data-i18n="about.v2.title">Results over aesthetics</h3>
-        <p data-i18n="about.v2.desc">Beautiful work means nothing without bookings. Every decision we make is tied to filling your calendar with the right couples at the right price.</p>
+        <h3 class="value-title" data-i18n="about.v2.title">Results over aesthetics</h3>
+        <p class="value-desc" data-i18n="about.v2.desc">Beautiful work means nothing without bookings. Every decision we make is tied to filling your calendar with the right couples at the right price.</p>
       </div>
-      <div class="value-item">
+      <div class="value-item reveal">
         <span class="value-num">03</span>
-        <h3 data-i18n="about.v3.title">France is our market</h3>
-        <p data-i18n="about.v3.desc">We know the French wedding market deeply — the platforms, the planners, the publications, and the couples. Local expertise with an international eye.</p>
+        <h3 class="value-title" data-i18n="about.v3.title">France is our market</h3>
+        <p class="value-desc" data-i18n="about.v3.desc">We know the French wedding market deeply — the platforms, the planners, the publications, and the couples. Local expertise with an international eye.</p>
       </div>
-      <div class="value-item">
+      <div class="value-item reveal delay-1">
         <span class="value-num">04</span>
-        <h3 data-i18n="about.v4.title">Long-term partners</h3>
-        <p data-i18n="about.v4.desc">We don't do one-off projects. We build lasting relationships with venues we believe in, becoming a true marketing partner — not just a supplier.</p>
+        <h3 class="value-title" data-i18n="about.v4.title">Long-term partners</h3>
+        <p class="value-desc" data-i18n="about.v4.desc">We don't do one-off projects. We build lasting relationships with venues we believe in, becoming a true marketing partner — not just a supplier.</p>
       </div>
     </div>
   </section>
 
   <!-- STATS -->
-  <section class="stats">
-    <div class="stat-item">
-      <span class="stat-num">38+</span>
-      <span class="stat-label" data-i18n="about.stat1">Venues partnered</span>
+  <div class="stats-section" id="statsSection">
+    <div class="stat-item reveal">
+      <div class="stat-num"><span class="counter" data-target="38">0</span><span class="stat-suffix">+</span></div>
+      <div class="stat-label" data-i18n="about.stat1">Venues partnered</div>
     </div>
-    <div class="stat-item">
-      <span class="stat-num">6</span>
-      <span class="stat-label" data-i18n="about.stat2">Years in weddings</span>
+    <div class="stat-item reveal delay-1">
+      <div class="stat-num"><span class="counter" data-target="6">0</span></div>
+      <div class="stat-label" data-i18n="about.stat2">Years in weddings</div>
     </div>
-    <div class="stat-item">
-      <span class="stat-num">2×</span>
-      <span class="stat-label" data-i18n="about.stat3">Avg. booking growth</span>
+    <div class="stat-item reveal delay-2">
+      <div class="stat-num"><span class="counter" data-target="2">0</span><span class="stat-suffix">×</span></div>
+      <div class="stat-label" data-i18n="about.stat3">Avg. booking growth</div>
     </div>
-    <div class="stat-item">
-      <span class="stat-num">9</span>
-      <span class="stat-label" data-i18n="about.stat4">Regions in France</span>
+    <div class="stat-item reveal delay-3">
+      <div class="stat-num"><span class="counter" data-target="9">0</span></div>
+      <div class="stat-label" data-i18n="about.stat4">Regions in France</div>
     </div>
-  </section>
+  </div>
 
-  <!-- BOTTOM CTA -->
-  <section class="cta-bar">
-    <p data-i18n="about.cta.text">Like what you see?</p>
-    <a href="contact.html" class="btn" data-i18n="about.cta.btn">Let's talk</a>
-  </section>
+  <!-- CTA BAR -->
+  <div class="cta-bar reveal">
+    <p class="cta-bar-text" data-i18n="about.cta.text">Like what you see?</p>
+    <a href="contact.html" class="btn" data-i18n="about.cta.btn">Let's talk →</a>
+  </div>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2025 MoGu Agency</p>
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">MoGu</a>
+      <p class="footer-tagline" data-i18n="footer.tagline">Wedding venue marketing across France. Only venues. Only results.</p>
+    </div>
+    <div class="footer-nav">
+      <p class="footer-links-title">Navigation</p>
+      <ul class="footer-links">
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact-col">
+      <p class="footer-links-title">Get in touch</p>
+      <a href="mailto:hello@moguagency.com" class="footer-contact-email">hello@moguagency.com</a>
+      <p class="footer-contact-location">Paris, France</p>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 MoGu Agency</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
-
 </body>
 </html>

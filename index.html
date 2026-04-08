@@ -1,104 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MoGu Agency</title>
+  <title>MoGu Agency — Wedding Venue Marketing, France</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="nav">
+  <!-- NAV -->
+  <nav class="nav" id="nav">
     <a href="index.html" class="nav-logo">MoGu</a>
     <button class="nav-toggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links">
-      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="index.html" class="nav-active" data-i18n="nav.home">Home</a></li>
       <li><a href="services.html" data-i18n="nav.services">Services</a></li>
       <li><a href="about.html" data-i18n="nav.about">About</a></li>
       <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
     </ul>
-    <div class="lang-toggle">
-      <button class="lang-btn active" data-lang="en">EN</button>
-      <span>/</span>
-      <button class="lang-btn" data-lang="fr">FR</button>
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <span>/</span>
+        <button class="lang-btn" data-lang="fr">FR</button>
+      </div>
+      <a href="contact.html" class="nav-cta" data-i18n="nav.cta">Start a project</a>
     </div>
   </nav>
 
-  <!-- HERO SECTION -->
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero-content">
-      <p class="hero-label" data-i18n="home.label">Marketing Agency</p>
-      <h1 class="hero-title" data-i18n="home.title">We fill your wedding venue's calendar.</h1>
-      <p class="hero-sub" data-i18n="home.sub">Strategic marketing for wedding venues across France.</p>
-      <a href="contact.html" class="btn" data-i18n="home.cta">Start a project</a>
-    </div>
-    <div class="hero-img-wrap">
+    <div class="hero-bg">
       <img
-        src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1200&q=90&auto=format&fit=crop"
+        src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1920&q=90&auto=format&fit=crop"
         alt="Elegant French wedding venue at golden hour"
-        class="hero-img"
+        class="hero-bg-img"
+        id="heroBgImg"
       />
     </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow" data-i18n="home.eyebrow">Wedding Venue Marketing</span>
+      <h1 class="hero-title" data-i18n="home.title">We fill your<br>venue's calendar.</h1>
+      <p class="hero-sub" data-i18n="home.sub">Strategic marketing for wedding venues across France.</p>
+      <a href="contact.html" class="btn" data-i18n="home.cta">Start a project →</a>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
   </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">38+ Venues</span><span class="marquee-dot marquee-item">·</span>
+      <span class="marquee-item">9 Regions in France</span><span class="marquee-dot marquee-item">·</span>
+      <span class="marquee-item">6 Years in Weddings</span><span class="marquee-dot marquee-item">·</span>
+      <span class="marquee-item">2× Avg. Booking Growth</span><span class="marquee-dot marquee-item">·</span>
+      <span class="marquee-item">Brand Identity</span><span class="marquee-dot marquee-item">·</span>
+      <span class="marquee-item">Digital Campaigns</span><span class="marquee-dot marquee-item">·</span>
+      <span class="marquee-item">Content Creation</span><span class="marquee-dot marquee-item">·</span>
+      <span class="marquee-item">Web Design</span><span class="marquee-dot marquee-item">·</span>
+      <span class="marquee-item">38+ Venues</span><span class="marquee-dot marquee-item">·</span>
+      <span class="marquee-item">9 Regions in France</span><span class="marquee-dot marquee-item">·</span>
+      <span class="marquee-item">6 Years in Weddings</span><span class="marquee-dot marquee-item">·</span>
+      <span class="marquee-item">2× Avg. Booking Growth</span><span class="marquee-dot marquee-item">·</span>
+      <span class="marquee-item">Brand Identity</span><span class="marquee-dot marquee-item">·</span>
+      <span class="marquee-item">Digital Campaigns</span><span class="marquee-dot marquee-item">·</span>
+      <span class="marquee-item">Content Creation</span><span class="marquee-dot marquee-item">·</span>
+      <span class="marquee-item">Web Design</span><span class="marquee-dot marquee-item">·</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services-section">
+    <div class="services-section-header reveal">
+      <div>
+        <span class="section-eyebrow" data-i18n="home.services.eyebrow">What we do</span>
+        <h2 class="section-title" data-i18n="home.services.title">Built for venues.<br>Built to deliver.</h2>
+      </div>
+      <a href="services.html" class="btn btn-dark" data-i18n="home.services.link">See all services →</a>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <span class="service-card-num">01</span>
+        <h3 class="service-card-title" data-i18n="home.s1.title">Brand Identity</h3>
+        <p class="service-card-desc" data-i18n="home.s1.desc">A brand as timeless and elegant as your venue — logo, palette, tone of voice.</p>
+        <a href="services.html" class="service-card-link" data-i18n="home.explore">Explore →</a>
+      </div>
+      <div class="service-card reveal delay-1">
+        <span class="service-card-num">02</span>
+        <h3 class="service-card-title" data-i18n="home.s2.title">Digital Campaigns</h3>
+        <p class="service-card-desc" data-i18n="home.s2.desc">Reach couples who are ready to book — Google, Instagram, Pinterest, SEO.</p>
+        <a href="services.html" class="service-card-link" data-i18n="home.explore">Explore →</a>
+      </div>
+      <div class="service-card reveal delay-2">
+        <span class="service-card-num">03</span>
+        <h3 class="service-card-title" data-i18n="home.s3.title">Content Creation</h3>
+        <p class="service-card-desc" data-i18n="home.s3.desc">Photography, video and copy that make couples picture their wedding day.</p>
+        <a href="services.html" class="service-card-link" data-i18n="home.explore">Explore →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-section" id="statsSection">
+    <div class="stat-item reveal">
+      <div class="stat-num"><span class="counter" data-target="38">0</span><span class="stat-suffix">+</span></div>
+      <div class="stat-label" data-i18n="about.stat1">Venues partnered</div>
+    </div>
+    <div class="stat-item reveal delay-1">
+      <div class="stat-num"><span class="counter" data-target="6">0</span></div>
+      <div class="stat-label" data-i18n="about.stat2">Years in weddings</div>
+    </div>
+    <div class="stat-item reveal delay-2">
+      <div class="stat-num"><span class="counter" data-target="2">0</span><span class="stat-suffix">×</span></div>
+      <div class="stat-label" data-i18n="about.stat3">Avg. booking growth</div>
+    </div>
+    <div class="stat-item reveal delay-3">
+      <div class="stat-num"><span class="counter" data-target="9">0</span></div>
+      <div class="stat-label" data-i18n="about.stat4">Regions in France</div>
+    </div>
+  </div>
 
   <!-- TESTIMONIALS -->
-  <section class="testimonials">
-    <p class="section-label" data-i18n="home.testimonials.label">What venues say</p>
+  <section class="testimonials-section">
+    <div class="testimonials-header reveal">
+      <span class="section-eyebrow" data-i18n="home.testimonials.eyebrow">What venues say</span>
+      <h2 class="section-title" data-i18n="home.testimonials.title">Venues that fill their calendars.</h2>
+    </div>
     <div class="testimonials-grid">
-      <div class="testimonial-item">
-        <p class="testimonial-quote" data-i18n="home.t1.quote">"MoGu filled our entire summer season within 3 months. We've never had a waiting list before — now we do."</p>
+      <div class="testimonial-card reveal">
+        <div class="testimonial-quote-mark">"</div>
+        <p class="testimonial-text" data-i18n="home.t1.quote">MoGu filled our entire summer season within 3 months. We've never had a waiting list before — now we do.</p>
         <div class="testimonial-author">
-          <span class="testimonial-name" data-i18n="home.t1.name">Sophie Martin</span>
-          <span class="testimonial-venue" data-i18n="home.t1.venue">Château de Lumière, Loire Valley</span>
+          <div class="testimonial-author-name" data-i18n="home.t1.name">Sophie Martin</div>
+          <div class="testimonial-author-venue" data-i18n="home.t1.venue">Château de Lumière, Loire Valley</div>
         </div>
       </div>
-      <div class="testimonial-item">
-        <p class="testimonial-quote" data-i18n="home.t2.quote">"They understood our venue instantly. The campaigns brought exactly the couples we love — and our revenue is up 80% year-on-year."</p>
+      <div class="testimonial-card reveal delay-1">
+        <div class="testimonial-quote-mark">"</div>
+        <p class="testimonial-text" data-i18n="home.t2.quote">They understood our venue instantly. The campaigns brought exactly the couples we love — and our revenue is up 80% year-on-year.</p>
         <div class="testimonial-author">
-          <span class="testimonial-name" data-i18n="home.t2.name">Thomas & Claire Beaumont</span>
-          <span class="testimonial-venue" data-i18n="home.t2.venue">Domaine des Oliviers, Provence</span>
+          <div class="testimonial-author-name" data-i18n="home.t2.name">Thomas & Claire Beaumont</div>
+          <div class="testimonial-author-venue" data-i18n="home.t2.venue">Domaine des Oliviers, Provence</div>
         </div>
       </div>
-      <div class="testimonial-item">
-        <p class="testimonial-quote" data-i18n="home.t3.quote">"Finally an agency that speaks our language — literally and figuratively. Our Instagram went from invisible to 12k followers in 8 months."</p>
+      <div class="testimonial-card reveal delay-2">
+        <div class="testimonial-quote-mark">"</div>
+        <p class="testimonial-text" data-i18n="home.t3.quote">Finally an agency that speaks our language — literally and figuratively. Our Instagram went from invisible to 12k followers in 8 months.</p>
         <div class="testimonial-author">
-          <span class="testimonial-name" data-i18n="home.t3.name">Élodie Roux</span>
-          <span class="testimonial-venue" data-i18n="home.t3.venue">Le Mas Saint-Joseph, Languedoc</span>
+          <div class="testimonial-author-name" data-i18n="home.t3.name">Élodie Roux</div>
+          <div class="testimonial-author-venue" data-i18n="home.t3.venue">Le Mas Saint-Joseph, Languedoc</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES PREVIEW -->
-  <section class="services-preview">
-    <div class="service-card">
-      <span class="service-num">01</span>
-      <h3 data-i18n="home.s1.title">Brand Identity</h3>
-      <p data-i18n="home.s1.desc">A brand as timeless and elegant as your venue.</p>
-    </div>
-    <div class="service-card">
-      <span class="service-num">02</span>
-      <h3 data-i18n="home.s2.title">Digital Campaigns</h3>
-      <p data-i18n="home.s2.desc">Reach couples who are ready to book their dream venue.</p>
-    </div>
-    <div class="service-card">
-      <span class="service-num">03</span>
-      <h3 data-i18n="home.s3.title">Content Creation</h3>
-      <p data-i18n="home.s3.desc">Photos and words that make couples say yes.</p>
-    </div>
+  <!-- CTA SECTION -->
+  <section class="cta-section">
+    <span class="section-eyebrow reveal" data-i18n="home.cta2.eyebrow">Let's work together</span>
+    <h2 class="cta-title reveal" data-i18n="home.cta2.title">Ready to fill<br>your calendar?</h2>
+    <a href="contact.html" class="btn reveal" data-i18n="home.cta2.btn">Start a project →</a>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2025 MoGu Agency</p>
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">MoGu</a>
+      <p class="footer-tagline" data-i18n="footer.tagline">Wedding venue marketing across France. Only venues. Only results.</p>
+    </div>
+    <div class="footer-nav">
+      <p class="footer-links-title">Navigation</p>
+      <ul class="footer-links">
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact-col">
+      <p class="footer-links-title">Get in touch</p>
+      <a href="mailto:hello@moguagency.com" class="footer-contact-email">hello@moguagency.com</a>
+      <p class="footer-contact-location">Paris, France</p>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 MoGu Agency</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
-
 </body>
 </html>

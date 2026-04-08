@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services — MoGu Agency</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="nav">
+  <!-- NAV -->
+  <nav class="nav scrolled" id="nav">
     <a href="index.html" class="nav-logo">MoGu</a>
     <button class="nav-toggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -22,32 +20,37 @@
       <li><a href="about.html" data-i18n="nav.about">About</a></li>
       <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
     </ul>
-    <div class="lang-toggle">
-      <button class="lang-btn active" data-lang="en">EN</button>
-      <span>/</span>
-      <button class="lang-btn" data-lang="fr">FR</button>
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <span>/</span>
+        <button class="lang-btn" data-lang="fr">FR</button>
+      </div>
+      <a href="contact.html" class="nav-cta" data-i18n="nav.cta">Start a project</a>
     </div>
   </nav>
 
   <!-- PAGE HEADER -->
   <section class="page-header">
-    <p class="hero-label" data-i18n="services.label">What we do</p>
-    <h1 class="page-title" data-i18n="services.title">Services built for wedding venues.</h1>
+    <span class="section-eyebrow" data-i18n="services.label">What we do</span>
+    <h1 class="page-title" data-i18n="services.title">Services built for<br>wedding venues.</h1>
   </section>
 
   <!-- SERVICES LIST -->
   <section class="services-list">
 
-    <div class="service-row">
+    <div class="service-row reveal">
       <div class="service-row-num">01</div>
-      <div class="service-row-body">
+      <div class="service-row-text">
+        <h2 class="service-row-title" data-i18n="services.s1.title">Brand Identity</h2>
+        <p class="service-row-desc" data-i18n="services.s1.desc">Your venue is unique — your brand should be too. We build complete visual identities for wedding venues: logo, color palette, typography, and tone of voice that make couples fall in love before they even visit.</p>
+      </div>
+      <div class="service-row-img-wrap">
         <img
           src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=900&q=85&auto=format&fit=crop"
           alt="Elegant French château wedding venue"
-          class="service-img"
+          class="service-row-img"
         />
-        <h2 data-i18n="services.s1.title">Brand Identity</h2>
-        <p data-i18n="services.s1.desc">Your venue is unique — your brand should be too. We build complete visual identities for wedding venues: logo, color palette, typography, and tone of voice that make couples fall in love before they even visit.</p>
       </div>
       <div class="service-row-tags">
         <span class="tag" data-i18n="services.s1.t1">Logo design</span>
@@ -56,16 +59,18 @@
       </div>
     </div>
 
-    <div class="service-row">
+    <div class="service-row reveal">
       <div class="service-row-num">02</div>
-      <div class="service-row-body">
+      <div class="service-row-text">
+        <h2 class="service-row-title" data-i18n="services.s2.title">Digital Campaigns</h2>
+        <p class="service-row-desc" data-i18n="services.s2.desc">We run targeted campaigns on Google, Instagram and Pinterest to put your venue in front of engaged couples at the exact moment they're searching. Every euro tracked, every booking counted.</p>
+      </div>
+      <div class="service-row-img-wrap">
         <img
           src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=900&q=85&auto=format&fit=crop"
           alt="Couple at outdoor wedding ceremony"
-          class="service-img"
+          class="service-row-img"
         />
-        <h2 data-i18n="services.s2.title">Digital Campaigns</h2>
-        <p data-i18n="services.s2.desc">We run targeted campaigns on Google, Instagram and Pinterest to put your venue in front of engaged couples at the exact moment they're searching. Every euro tracked, every booking counted.</p>
       </div>
       <div class="service-row-tags">
         <span class="tag" data-i18n="services.s2.t1">Paid social</span>
@@ -74,16 +79,18 @@
       </div>
     </div>
 
-    <div class="service-row">
+    <div class="service-row reveal">
       <div class="service-row-num">03</div>
-      <div class="service-row-body">
+      <div class="service-row-text">
+        <h2 class="service-row-title" data-i18n="services.s3.title">Content Creation</h2>
+        <p class="service-row-desc" data-i18n="services.s3.desc">Stunning photography, cinematic video, and copy that captures the emotion of your venue. We create content that makes couples picture their wedding day the moment they see it.</p>
+      </div>
+      <div class="service-row-img-wrap">
         <img
           src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?w=900&q=85&auto=format&fit=crop"
           alt="Wedding photography golden hour"
-          class="service-img"
+          class="service-row-img"
         />
-        <h2 data-i18n="services.s3.title">Content Creation</h2>
-        <p data-i18n="services.s3.desc">Stunning photography, cinematic video, and copy that captures the emotion of your venue. We create content that makes couples picture their wedding day the moment they see it.</p>
       </div>
       <div class="service-row-tags">
         <span class="tag" data-i18n="services.s3.t1">Photography</span>
@@ -92,16 +99,18 @@
       </div>
     </div>
 
-    <div class="service-row">
+    <div class="service-row reveal">
       <div class="service-row-num">04</div>
-      <div class="service-row-body">
+      <div class="service-row-text">
+        <h2 class="service-row-title" data-i18n="services.s4.title">Web Design</h2>
+        <p class="service-row-desc" data-i18n="services.s4.desc">A website as beautiful as your venue — and built to convert. We design and build fast, elegant websites that showcase your space and turn visitors into inquiries.</p>
+      </div>
+      <div class="service-row-img-wrap">
         <img
           src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=900&q=85&auto=format&fit=crop"
           alt="Elegant wedding venue interior table setting"
-          class="service-img"
+          class="service-row-img"
         />
-        <h2 data-i18n="services.s4.title">Web Design</h2>
-        <p data-i18n="services.s4.desc">A website as beautiful as your venue — and built to convert. We design and build fast, elegant websites that showcase your space and turn visitors into inquiries.</p>
       </div>
       <div class="service-row-tags">
         <span class="tag" data-i18n="services.s4.t1">UI design</span>
@@ -112,18 +121,41 @@
 
   </section>
 
-  <!-- BOTTOM CTA -->
-  <section class="cta-bar">
-    <p data-i18n="services.cta.text">Ready to fill your calendar?</p>
-    <a href="contact.html" class="btn" data-i18n="services.cta.btn">Get in touch</a>
-  </section>
+  <!-- CTA BAR -->
+  <div class="cta-bar reveal">
+    <p class="cta-bar-text" data-i18n="services.cta.text">Ready to fill your calendar?</p>
+    <a href="contact.html" class="btn" data-i18n="services.cta.btn">Get in touch →</a>
+  </div>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2025 MoGu Agency</p>
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">MoGu</a>
+      <p class="footer-tagline" data-i18n="footer.tagline">Wedding venue marketing across France. Only venues. Only results.</p>
+    </div>
+    <div class="footer-nav">
+      <p class="footer-links-title">Navigation</p>
+      <ul class="footer-links">
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact-col">
+      <p class="footer-links-title">Get in touch</p>
+      <a href="mailto:hello@moguagency.com" class="footer-contact-email">hello@moguagency.com</a>
+      <p class="footer-contact-location">Paris, France</p>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 MoGu Agency</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
-
 </body>
 </html>
