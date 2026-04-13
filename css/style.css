@@ -428,7 +428,8 @@ img { display: block; max-width: 100%; }
 .contact-details { display: flex; flex-direction: column; gap: 28px; }
 .contact-detail-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-faint); margin-bottom: 4px; }
 .contact-detail-value { font-size: 16px; color: var(--ink); font-weight: 500; }
-.contact-form-wrap { padding: 72px 56px; }
+.contact-form-wrap { padding: 72px 56px; display: flex; flex-direction: column; justify-content: center; }
+.tally-frame { display: block; min-height: 480px; }
 .contact-form { display: flex; flex-direction: column; gap: 28px; }
 .form-group { display: flex; flex-direction: column; gap: 8px; }
 .form-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-light); }
