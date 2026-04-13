@@ -67,6 +67,11 @@ const translations = {
     'services.s4.t1': 'UI design',
     'services.s4.t2': 'Development',
     'services.s4.t3': 'Conversion',
+    'services.s1.cta': 'Get a quote →',
+    'services.s2.cta': 'Get a quote →',
+    'services.s3.cta': 'Get a quote →',
+    'services.s4.cta': 'Get a quote →',
+    'services.cta.eyebrow': 'Ready?',
     'services.cta.text': 'Ready to fill your calendar?',
     'services.cta.btn': 'Get in touch →',
 
@@ -168,6 +173,11 @@ const translations = {
     'services.s4.t1': 'Design UI',
     'services.s4.t2': 'Développement',
     'services.s4.t3': 'Conversion',
+    'services.s1.cta': 'Demander un devis →',
+    'services.s2.cta': 'Demander un devis →',
+    'services.s3.cta': 'Demander un devis →',
+    'services.s4.cta': 'Demander un devis →',
+    'services.cta.eyebrow': 'Prêt ?',
     'services.cta.text': 'Prêt à remplir votre calendrier ?',
     'services.cta.btn': 'Nous contacter →',
 

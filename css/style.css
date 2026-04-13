@@ -314,27 +314,64 @@ img { display: block; max-width: 100%; }
   line-height: 0.94; letter-spacing: -3px; color: var(--ink); margin-top: 16px;
 }
 
-/* ── SERVICES LIST (services page) ── */
-.services-list { display: flex; flex-direction: column; }
-.service-row {
-  display: grid; grid-template-columns: 72px 1fr 320px 180px;
-  gap: 48px; padding: 64px 56px;
-  border-bottom: 1px solid var(--border); align-items: start;
-  transition: background var(--ease);
+/* ── FULL-WIDTH SERVICE CARDS (services page) ── */
+.svc-cards { display: flex; flex-direction: column; }
+.svc-card {
+  position: relative; min-height: 72vh;
+  display: flex; align-items: flex-end;
+  background-size: cover; background-position: center;
+  overflow: hidden;
 }
-.service-row:hover { background: var(--cream-mid); }
-.service-row-num { font-size: 12px; color: var(--terracotta); letter-spacing: 0.1em; padding-top: 8px; }
-.service-row-title { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; color: var(--ink); margin-bottom: 16px; }
-.service-row-desc { font-size: 15px; color: var(--ink-light); line-height: 1.8; }
-.service-row-img-wrap { overflow: hidden; border-radius: 4px; }
-.service-row-img { width: 100%; aspect-ratio: 4/3; object-fit: cover; transition: transform 0.6s ease; }
-.service-row:hover .service-row-img { transform: scale(1.04); }
-.service-row-tags { display: flex; flex-direction: column; gap: 8px; padding-top: 8px; }
-.tag {
-  display: inline-block; padding: 7px 14px; border: 1px solid var(--border);
-  font-size: 12px; color: var(--ink-light); letter-spacing: 0.04em;
-  border-radius: 2px; width: fit-content; background: #fff;
+.svc-card-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(28,16,8,0.88) 0%,
+    rgba(28,16,8,0.52) 40%,
+    rgba(28,16,8,0.18) 100%
+  );
+  transition: background 0.5s ease;
 }
+.svc-card:hover .svc-card-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(28,16,8,0.92) 0%,
+    rgba(28,16,8,0.58) 45%,
+    rgba(28,16,8,0.22) 100%
+  );
+}
+.svc-card-content {
+  position: relative; z-index: 2;
+  padding: 72px 56px; max-width: 640px;
+}
+.svc-card-content--right {
+  margin-left: auto; text-align: right;
+}
+.svc-card-content--right .svc-card-tags { justify-content: flex-end; }
+.svc-card-num {
+  font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--terracotta); margin-bottom: 16px; display: block;
+}
+.svc-card-title {
+  font-size: clamp(36px, 5.5vw, 64px); font-weight: 800;
+  line-height: 1.0; letter-spacing: -2px; color: var(--cream);
+  margin-bottom: 20px;
+}
+.svc-card-desc {
+  font-size: 16px; color: rgba(250,248,244,0.65); line-height: 1.8;
+  margin-bottom: 28px;
+}
+.svc-card-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 36px; }
+.svc-tag {
+  display: inline-block; padding: 7px 16px;
+  border: 1px solid rgba(250,248,244,0.25);
+  font-size: 12px; color: rgba(250,248,244,0.7); letter-spacing: 0.06em;
+  border-radius: 2px; backdrop-filter: blur(4px);
+  background: rgba(250,248,244,0.06);
+  transition: border-color var(--ease), color var(--ease);
+}
+.svc-card:hover .svc-tag { border-color: rgba(250,248,244,0.4); color: rgba(250,248,244,0.9); }
+.svc-card-cta { white-space: nowrap; }
 
 /* ── CTA BAR ── */
 .cta-bar {
@@ -434,9 +471,12 @@ img { display: block; max-width: 100%; }
   .page-header { padding: 120px 24px 56px; }
   .page-title { letter-spacing: -2px; }
 
-  /* Services list */
-  .service-row { grid-template-columns: 1fr; gap: 20px; padding: 40px 24px; }
-  .service-row-tags { flex-direction: row; flex-wrap: wrap; }
+  /* Full-width service cards */
+  .svc-card { min-height: 80vh; }
+  .svc-card-content { padding: 48px 24px; max-width: 100%; }
+  .svc-card-content--right { margin-left: 0; text-align: left; }
+  .svc-card-content--right .svc-card-tags { justify-content: flex-start; }
+  .svc-card-title { letter-spacing: -1px; }
 
   /* Manifesto */
   .manifesto { padding: 64px 24px; }
