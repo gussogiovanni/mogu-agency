@@ -198,11 +198,11 @@ img { display: block; max-width: 100%; }
 .services-section-header .section-title { max-width: 460px; }
 
 .services-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr);
+  display: grid; grid-template-columns: repeat(4, 1fr);
   gap: 2px; background: var(--border);
 }
 .service-card {
-  background: var(--cream); padding: 48px 40px;
+  background: var(--cream); padding: 40px 32px;
   transition: background var(--ease); cursor: default; overflow: hidden; position: relative;
 }
 .service-card::after {
@@ -471,7 +471,8 @@ img { display: block; max-width: 100%; }
   /* Services */
   .services-section { padding: 64px 24px; }
   .services-section-header { flex-direction: column; align-items: flex-start; gap: 24px; }
-  .services-grid { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .service-card { padding: 32px 24px; }
 
   /* Stats */
   .stats-section { grid-template-columns: repeat(2, 1fr); }
