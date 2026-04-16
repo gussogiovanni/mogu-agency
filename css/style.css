@@ -447,73 +447,87 @@ img { display: block; max-width: 100%; }
 .form-input::placeholder, .form-textarea::placeholder { color: #c5b9b2; }
 .form-textarea { resize: vertical; min-height: 120px; }
 
-/* ── MOBILE ── */
+/* ── TABLET & BELOW ── */
 @media (max-width: 960px) {
   /* Nav */
-  .nav { padding: 20px 24px; flex-wrap: wrap; gap: 12px; }
-  .nav.scrolled { padding: 16px 24px; }
-  .nav-toggle { display: flex; }
+  .nav { padding: 18px 24px; flex-wrap: wrap; gap: 10px; }
+  .nav.scrolled { padding: 14px 24px; }
+  .nav-toggle { display: flex; order: 3; }
+  .nav-right { order: 2; gap: 12px; }
   .nav-cta { display: none; }
+  .lang-toggle { gap: 4px; font-size: 11px; }
+  .lang-btn { font-size: 11px; }
   .nav-links {
     display: none; flex-direction: column; gap: 0; width: 100%;
     border-top: 1px solid rgba(232,221,212,0.5); margin-top: 8px;
-    background: var(--cream); border-radius: 4px;
+    background: var(--cream); border-radius: 4px; order: 4;
   }
   .nav-links.open { display: flex; }
-  .nav-links li a { display: block; padding: 14px 0; border-bottom: 1px solid rgba(232,221,212,0.5); color: var(--ink-light) !important; }
+  .nav-links li a { display: block; padding: 14px 4px; border-bottom: 1px solid rgba(232,221,212,0.5); color: var(--ink-light) !important; }
+  .nav-links li:last-child a { border-bottom: none; }
 
   /* Hero */
-  .hero { min-height: 100svh; }
+  .hero { min-height: 100svh; height: auto; }
   .hero-content { padding: 0 24px 80px; }
   .hero-title { letter-spacing: -2px; }
-  .hero-scroll { right: 24px; }
+  .hero-sub { font-size: 16px; margin-bottom: 36px; }
+  .hero-scroll { right: 24px; bottom: 32px; }
 
-  /* Services */
-  .services-section { padding: 64px 24px; }
-  .services-section-header { flex-direction: column; align-items: flex-start; gap: 24px; }
+  /* Marquee */
+  .marquee-item { font-size: 11px; padding: 0 20px; }
+
+  /* Services (homepage) */
+  .services-section { padding: 72px 24px; }
+  .services-section-header { flex-direction: column; align-items: flex-start; gap: 24px; margin-bottom: 40px; }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
   .service-card { padding: 32px 24px; }
+  .service-card-num { margin-bottom: 24px; }
 
   /* Stats */
   .stats-section { grid-template-columns: repeat(2, 1fr); }
   .stat-item { padding: 36px 24px; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); }
   .stat-item:nth-child(even) { border-right: none; }
   .stat-item:nth-last-child(-n+2) { border-bottom: none; }
-  .stat-num { font-size: 42px; }
+  .stat-num { font-size: 42px; letter-spacing: -2px; }
 
   /* Testimonials */
-  .testimonials-section { padding: 64px 24px; }
+  .testimonials-section { padding: 72px 24px; }
+  .testimonials-header { margin-bottom: 40px; }
   .testimonials-grid { grid-template-columns: 1fr; }
+  .testimonial-card { padding: 36px 28px; }
 
   /* CTA */
-  .cta-section { padding: 80px 24px; }
+  .cta-section { padding: 88px 24px; }
 
   /* Footer */
-  .footer { grid-template-columns: 1fr; padding: 48px 24px; gap: 40px; }
-  .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+  .footer { grid-template-columns: 1fr; padding: 56px 24px 40px; gap: 40px; }
+  .footer-bottom { flex-direction: column; gap: 16px; text-align: center; padding-top: 28px; }
+  .footer-tagline { max-width: 100%; }
 
   /* Page header */
   .page-header { padding: 120px 24px 56px; }
   .page-title { letter-spacing: -2px; }
 
   /* Full-width service cards */
-  .svc-card { min-height: 80vh; }
-  .svc-card-content { padding: 48px 24px; max-width: 100%; }
+  .svc-card { min-height: 72vh; }
+  .svc-card-content { padding: 56px 24px; max-width: 100%; }
   .svc-card-content--right { margin-left: 0; text-align: left; }
   .svc-card-content--right .svc-card-tags { justify-content: flex-start; }
   .svc-card-title { letter-spacing: -1px; }
+  .svc-card-desc { font-size: 16px; line-height: 1.7; }
 
   /* About manifesto */
-  .about-manifesto { padding: 64px 24px; }
-  .about-manifesto-inner { grid-template-columns: 1fr; gap: 32px; }
+  .about-manifesto { padding: 72px 24px; }
+  .about-manifesto-inner { grid-template-columns: 1fr; gap: 24px; }
 
   /* Team */
-  .team-section { padding: 64px 24px; }
-  .team-grid { grid-template-columns: 1fr; gap: 40px; max-width: 100%; }
-  .team-photo-wrap { aspect-ratio: 1/1; }
+  .team-section { padding: 72px 24px; }
+  .team-header { margin-bottom: 40px; }
+  .team-grid { grid-template-columns: 1fr; gap: 48px; max-width: 100%; }
+  .team-photo-wrap { aspect-ratio: 4/5; }
 
   /* About photo */
-  .about-photo-wrap { height: 320px; }
+  .about-photo-wrap { height: 360px; }
 
   /* CTA bar */
   .cta-bar { flex-direction: column; align-items: flex-start; gap: 24px; padding: 40px 24px; }
@@ -521,5 +535,96 @@ img { display: block; max-width: 100%; }
   /* Contact */
   .contact-layout { grid-template-columns: 1fr; }
   .contact-info { padding: 48px 24px; border-right: none; border-bottom: 1px solid var(--border); }
-  .contact-form-wrap { padding: 48px 24px; }
+  .contact-intro { max-width: 100%; margin-bottom: 40px; }
+  .contact-form-wrap { padding: 40px 24px; }
+  .tally-frame { min-height: 560px; }
+}
+
+/* ── PHONE ── */
+@media (max-width: 560px) {
+  /* Nav */
+  .nav { padding: 14px 18px; }
+  .nav.scrolled { padding: 12px 18px; }
+  .nav-logo { font-size: 20px; }
+  .lang-toggle { gap: 3px; }
+  .lang-btn { font-size: 10px; letter-spacing: 0.04em; }
+  .lang-toggle span { font-size: 10px; }
+
+  /* Hero */
+  .hero-content { padding: 0 20px 64px; }
+  .hero-title { font-size: clamp(40px, 11vw, 56px); letter-spacing: -1.5px; margin-bottom: 20px; }
+  .hero-sub { font-size: 15px; margin-bottom: 28px; }
+  .hero-eyebrow { font-size: 10px; margin-bottom: 14px; }
+  .hero-scroll { display: none; }
+
+  /* Buttons */
+  .btn { padding: 14px 28px; font-size: 13px; }
+
+  /* Marquee */
+  .marquee { padding: 12px 0; }
+  .marquee-item { font-size: 10px; padding: 0 14px; letter-spacing: 0.1em; }
+
+  /* Section titles */
+  .section-title { letter-spacing: -1.2px; }
+
+  /* Services homepage — stack to single column */
+  .services-section { padding: 56px 20px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .service-card { padding: 28px 22px; }
+  .service-card-title { font-size: 20px; }
+  .service-card-num { margin-bottom: 18px; }
+
+  /* Stats — single column */
+  .stats-section { grid-template-columns: 1fr; }
+  .stat-item { border-right: none !important; border-bottom: 1px solid var(--border) !important; padding: 28px 24px; }
+  .stat-item:last-child { border-bottom: none !important; }
+  .stat-num { font-size: 38px; }
+
+  /* Testimonials */
+  .testimonials-section { padding: 56px 20px; }
+  .testimonial-card { padding: 32px 24px; gap: 20px; }
+  .testimonial-text { font-size: 15px; }
+  .testimonial-quote-mark { font-size: 56px; }
+
+  /* CTA */
+  .cta-section { padding: 72px 20px; }
+  .cta-title { letter-spacing: -1.5px; margin-bottom: 36px; }
+
+  /* Footer */
+  .footer { padding: 48px 20px 32px; gap: 32px; }
+
+  /* Page header */
+  .page-header { padding: 104px 20px 48px; }
+  .page-title { font-size: clamp(36px, 10vw, 54px); letter-spacing: -1.5px; }
+
+  /* Full-width service cards */
+  .svc-card { min-height: 620px; }
+  .svc-card-content { padding: 44px 20px; }
+  .svc-card-title { font-size: clamp(30px, 8vw, 40px); letter-spacing: -0.8px; }
+  .svc-card-desc { font-size: 15px; margin-bottom: 22px; }
+  .svc-card-tags { margin-bottom: 28px; gap: 6px; }
+  .svc-tag { font-size: 11px; padding: 6px 12px; }
+
+  /* About manifesto */
+  .about-manifesto { padding: 56px 20px; }
+  .about-manifesto-title { letter-spacing: -1px; }
+  .about-manifesto-text { font-size: 16px; line-height: 1.8; }
+
+  /* Team */
+  .team-section { padding: 56px 20px; }
+  .team-grid { gap: 40px; }
+  .team-photo-wrap { aspect-ratio: 1/1; max-width: 320px; margin-left: auto; margin-right: auto; }
+
+  /* About photo */
+  .about-photo-wrap { height: 260px; }
+
+  /* CTA bar */
+  .cta-bar { padding: 32px 20px; gap: 20px; }
+
+  /* Contact */
+  .contact-info { padding: 40px 20px; }
+  .contact-form-wrap { padding: 32px 20px 48px; }
+  .contact-intro { font-size: 16px; margin-bottom: 32px; }
+  .tally-frame { min-height: 640px; }
+  .contact-detail-value { font-size: 15px; }
 }
