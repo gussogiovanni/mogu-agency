@@ -23,6 +23,7 @@ const translations = {
     'home.s3.desc': 'Photography, video and copy that make couples picture their wedding day.',
     'home.s4.title': 'Web Design',
     'home.s4.desc': 'A website as beautiful as your venue — fast, elegant, built to convert.',
+    'home.proof': 'Trusted by 38+ venues across 9 European markets',
     'home.explore': 'Explore →',
     'home.testimonials.eyebrow': 'What venues say',
     'home.testimonials.title': 'Venues that fill their calendars.',
@@ -48,7 +49,7 @@ const translations = {
 
     // Services page
     'services.label': 'What we do',
-    'services.title': 'Services built for wedding venues.',
+    'services.title': 'Services built for European wedding venues.',
     'services.s1.title': 'Brand Identity',
     'services.s1.desc': "Your venue is unique — your brand should be too. We build complete visual identities for wedding venues: logo, color palette, typography, and tone of voice that make couples fall in love before they even visit.",
     'services.s1.t1': 'Logo design',
@@ -136,6 +137,7 @@ const translations = {
     'home.s3.desc': 'Photographie, vidéo et textes qui font imaginer leur mariage aux couples.',
     'home.s4.title': 'Web Design',
     'home.s4.desc': 'Un site aussi beau que votre lieu — rapide, élégant, conçu pour convertir.',
+    'home.proof': 'Plus de 38 lieux partenaires dans 9 marchés européens',
     'home.explore': 'Découvrir →',
     'home.testimonials.eyebrow': 'Ce que disent les lieux',
     'home.testimonials.title': 'Des lieux qui remplissent leurs calendriers.',
@@ -245,6 +247,7 @@ const translations = {
     'home.s3.desc': 'Fotografie, Video und Texte, die Paare ihren Hochzeitstag vorstellen lassen.',
     'home.s4.title': 'Webdesign',
     'home.s4.desc': 'Eine Website so schön wie Ihre Location — schnell, elegant, auf Conversion ausgelegt.',
+    'home.proof': 'Vertraut von 38+ Locations in 9 europäischen Märkten',
     'home.explore': 'Entdecken →',
     'home.testimonials.eyebrow': 'Was Locations sagen',
     'home.testimonials.title': 'Locations, die ihren Kalender füllen.',
@@ -420,7 +423,7 @@ const revealObserver = new IntersectionObserver((entries) => {
       revealObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.1, rootMargin: '0px 0px -32px 0px' });
+}, { threshold: 0.15, rootMargin: '0px 0px -48px 0px' });
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
 // ── COUNTER ANIMATION ──

@@ -117,7 +117,11 @@ img { display: block; max-width: 100%; }
 }
 .hero-sub {
   font-size: 18px; color: rgba(250,248,244,0.6);
-  margin-bottom: 48px; max-width: 460px; line-height: 1.65;
+  margin-bottom: 16px; max-width: 460px; line-height: 1.65;
+}
+.hero-proof {
+  font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+  color: rgba(250,248,244,0.38); margin-bottom: 40px;
 }
 .hero-scroll {
   position: absolute; bottom: 48px; right: 56px; z-index: 2;
@@ -293,7 +297,10 @@ img { display: block; max-width: 100%; }
 .footer-links a:hover { color: var(--cream); }
 .footer-contact-email { font-size: 15px; color: var(--terracotta); font-weight: 600; display: block; margin-bottom: 8px; transition: color var(--ease); }
 .footer-contact-email:hover { color: #d4844e; }
-.footer-contact-location { font-size: 13px; color: rgba(250,248,244,0.35); margin-bottom: 24px; }
+.footer-contact-location { font-size: 13px; color: rgba(250,248,244,0.35); margin-bottom: 20px; }
+.footer-socials { display: flex; gap: 16px; }
+.footer-socials a { color: rgba(250,248,244,0.3); transition: color var(--ease); }
+.footer-socials a:hover { color: var(--terracotta); }
 .footer-bottom {
   grid-column: 1 / -1; padding-top: 36px;
   border-top: 1px solid rgba(255,255,255,0.06);
