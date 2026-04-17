@@ -334,6 +334,27 @@ const translations = {
 };
 
 // ── LANGUAGE SWITCHER ──
+const metaDescriptions = {
+  en: {
+    '/':            'MoGu is the specialist marketing agency for European wedding venues. We fill your calendar with ideal couples through brand identity, digital campaigns, content creation and web design.',
+    '/about.html':  'MoGu was built for Europe\'s finest wedding venues. Meet Giovanni and Mark — the team behind the agency that fills venue calendars across the continent.',
+    '/services.html': 'Brand identity, digital campaigns, content creation and web design — all built exclusively for European wedding venues. See how MoGu fills your calendar.',
+    '/contact.html': 'Ready to fill your wedding venue calendar? Get in touch with MoGu Agency. We respond within 24 hours.',
+  },
+  fr: {
+    '/':            'MoGu est l\'agence marketing spécialisée pour les lieux de mariage européens. Nous remplissons votre calendrier avec les couples idéaux.',
+    '/about.html':  'MoGu a été créé pour les plus beaux lieux de mariage d\'Europe. Rencontrez Giovanni et Mark — l\'équipe derrière l\'agence.',
+    '/services.html': 'Identité de marque, campagnes digitales, création de contenu et web design — conçus exclusivement pour les lieux de mariage européens.',
+    '/contact.html': 'Prêt à remplir votre calendrier ? Contactez MoGu Agency. Nous répondons sous 24 heures.',
+  },
+  de: {
+    '/':            'MoGu ist die Spezial-Marketingagentur für europäische Hochzeitslocations. Wir füllen Ihren Kalender mit idealen Paaren.',
+    '/about.html':  'MoGu wurde für Europas schönste Hochzeitslocations gegründet. Lernen Sie Giovanni und Mark kennen — das Team hinter der Agentur.',
+    '/services.html': 'Markenidentität, digitale Kampagnen, Content-Erstellung und Webdesign — exklusiv für europäische Hochzeitslocations.',
+    '/contact.html': 'Bereit, Ihren Kalender zu füllen? Kontaktieren Sie MoGu Agency. Wir antworten innerhalb von 24 Stunden.',
+  }
+};
+
 function setLanguage(lang) {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
@@ -346,6 +367,14 @@ function setLanguage(lang) {
   });
   localStorage.setItem('mogu-lang', lang);
   document.documentElement.setAttribute('lang', lang);
+  // Update meta description for current page + language
+  const path = window.location.pathname.replace(/.*\//, '/').replace(/^([^/])/, '/$1') || '/';
+  const pageKey = ['/', '/about.html', '/services.html', '/contact.html'].find(p => path.endsWith(p.replace('/', ''))) || '/';
+  const desc = metaDescriptions[lang]?.[pageKey];
+  if (desc) {
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', desc);
+  }
 }
 const savedLang = localStorage.getItem('mogu-lang') || 'en';
 setLanguage(savedLang);
